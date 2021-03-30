@@ -2,8 +2,8 @@ name: Update slow tests
 
 on:
   schedule:
-    # Every day at 4:15pm EDT
-    - cron: "15 20 * * *"
+  # Every day at 4:15pm EDT
+  - cron: "15 20 * * *"
   # Have the ability to trigger this job manually through the API
   workflow_dispatch:
 
