@@ -30,4 +30,5 @@ jobs:
           cd pytorch
           git gc
           git push --tags git@github.com:pytorch/pytorch-canary.git
-          git push --all git@github.com:pytorch/pytorch-canary.git
+          git branch -a --format "%(refname)" | xargs -i bash -c "git symbolic-ref HEAD {} && git push git@github.com:pytorch/pytorch-canary"
+
