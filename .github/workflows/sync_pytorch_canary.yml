@@ -27,4 +27,5 @@ jobs:
         run: |
           export GIT_SSH_COMMAND="ssh -v -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no"
           cd pytorch
+          git gc
           git push --mirror git@github.com:pytorch/pytorch-canary.git
